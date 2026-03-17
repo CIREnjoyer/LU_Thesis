@@ -27,18 +27,19 @@ dta <- dta |>
          extr = ((q1 + (7 - q6_orig))/2),
          agr = (((7 - q2_orig) + q7)/2),
          neur = ((q4 + (7 - q9_orig))/2),
-         ethn = rowMeans(across(c(c11,c13,t11,t13)), na.rm = T),
-         civ = rowMeans(across(c(c12,c14,c15,t12,t14,t15)), na.rm = T),
+         q11 = coalesce(c11, t11),
+         q12 = coalesce(c12, t12),
+         q13 = coalesce(c13, t13),
+         q14 = coalesce(c14, t14),
+         q15 = coalesce(c15, t15),
+         ethn = rowMeans(across(c(q11,q13)), na.rm = T),
+         civ = rowMeans(across(c(q12,q14,q15)), na.rm = T),
          group = factor(group),
          gndr = factor(gndr, levels = c(1:4), labels = c("Male", "Female", "Non-binary", "Prefer")),
          psychback = factor(psychback, labels = c("No", "Yes")),
          nationality = factor(nationality),
          educ = factor(educ),
-         q11 = coalesce(c11, t11),
-         q12 = coalesce(c12, t12),
-         q13 = coalesce(c13, t13),
-         q14 = coalesce(c14, t14),
-         q15 = coalesce(c15, t15)
+         
   )
 
 datasummary_skim(dta, type = "numeric",
@@ -69,7 +70,7 @@ modelsummary(list(model5, model6, model7, model8),
              stars = T)
 
 
-model9 <- lm(check ~ open + cons + extr + agr + neur, data = dta)
+model9 <- lm(check ~ open + cons + extr + agr + neur + psychback, data = dta)
 summary(model9)
 
 
