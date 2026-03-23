@@ -60,6 +60,9 @@ dta <- dta |>
   ) |>
   rename(grp = group)
 
+dta1 <- dta |>
+  filter(check <= 3 | is.na(check))
+
 datasummary_skim(dta, type = "numeric",
                  fun_numeric = list(Min = min, Mean = mean, SD = sd, Max = max, "Total N" = length))
 
@@ -80,9 +83,6 @@ model4 <- lm(civ ~ open + cons + extr + agr + neur , data = subset(dta1, group =
 
 modelsummary(list(model1, model2, model3, model4),
              stars = T)
-
-dta1 <- dta |>
-  filter(check <= 3 | is.na(check))
 
 model5 <- lm(civ ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp, data = dta1)
 
