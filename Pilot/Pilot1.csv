@@ -1,0 +1,97 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,QID1219594129,q1,q2_orig,q3,q4,q5,q6_orig,q7,q8_orig,q9_orig,q10_orig,cc1,cc2,c11,c12,c13,c14,c15,picture,tc1,tc2,coa1,coa2,anthem,t11,t12,t13,t14,t15,check,age,gndr,nationality,educ,lrscale_1,psychback,SC0,group
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,"Welcome to the research study!  
+
+ 
+
+I am interested in understanding relationship between personality and national identity. You will be presented with information relevant to this topic and asked to answer some questions about it. This study is a part of a Master's Thesis project within Leiden University. Please be assured that your responses will be kept completely confidential and are absolutely anonymous.  
+
+
+The study should take you around 5 minutes to complete. Your participation in this research is voluntary. You have the right to withdraw at any point during the study, for any reason, and without any prejudice. To do that just close the tab in your browser, your answer will be deleted within 1 hour. At the end of the study the full debrief will be presented where you will learn more about the processes and concepts of interest for this study. If you would like to withdraw your answers after learning this information, you are free to do so.
+The researcher is a Ukrainian Political Science student at Leiden University. If you would like to contact me to discuss this research, please e-mail Danylo Skotsyk at skotsyk.danylo@gmail.com. 
+
+
+By clicking the button below, you acknowledge that your participation in the study is voluntary, you are 18 years of age, and that you are aware that you may choose to terminate your participation in the study at any time and for any reason.
+
+
+Please note that this survey will be best displayed on a laptop or desktop computer.  Some features may be less compatible for use on a mobile device.","Extraverted, enthusiastic","Critical, quarrelsome","Dependable, self-disciplined","Anxious, easily upset","Open to new experiences, complex","Reserved, quiet","Sympathetic, warm","Disorganized, careless","Calm, emotionally stable","Conventional, uncreative",Which plain has characteristically darker earth?,What is the name of the dark-coloured mineral in the text?,to have been born in the country?,to be able to speak the national language(s)?,to have national ancestry?,to respect national institutions and laws?,to feel as a member of a nation?,Please choose an image that you like most,Where is Valoria located?,What was the name of the legendary Valorian leader?,"It was brought to the Valorian government's attention that the state does not have a coat of arms. It was decided that you should acquire one. Therefore, the national referendum was organised. What version do you prefer? 
+
+(You are free to skip this question with no consequences if you so wish)","It was brought to the Valorian government's attention that the state does not have a coat of arms. It was decided that you should acquire one. Therefore, the national referendum was organised. What version do you prefer?
+
+(You are free to skip this question with no consequences if you so wish)","In addition to the coat of arms, it was decided to update the national anthem. The first line is ""Long live the glorious Valoria"". How do you imagine the second line?
+
+(You are free to skip this quesion with no consequences if you so wish)",to have been born in Valoria?,to be able to speak Valorian language?,to have Valorian ancestry?,to respect Valorian institutions and laws?,to feel Valorian?,While answering the previous questions were you thinking more as a member of your nationality or a Valorian?,What is your full age?,What is your gender?,What is your nationality?,What is the highest level of school you have completed or the highest degree you have received?,Here is a 7-point scale on which the political views that people might hold are arranged from extremely left (1) to  extremely right (7). Where would you place yourself on this scale? - Political Ideology,"Do you have any background in social/experimental psychology (e.g., major, minor, course in college, etc.)",Score,group
+"{""ImportId"":""startDate"",""timeZone"":""Europe/Berlin""}","{""ImportId"":""endDate"",""timeZone"":""Europe/Berlin""}","{""ImportId"":""status""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""Europe/Berlin""}","{""ImportId"":""_recordId""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID1219594129""}","{""ImportId"":""QID3""}","{""ImportId"":""QID5""}","{""ImportId"":""QID7""}","{""ImportId"":""QID6""}","{""ImportId"":""QID8""}","{""ImportId"":""QID13""}","{""ImportId"":""QID12""}","{""ImportId"":""QID11""}","{""ImportId"":""QID10""}","{""ImportId"":""QID9""}","{""ImportId"":""QID63""}","{""ImportId"":""QID64""}","{""ImportId"":""QID35""}","{""ImportId"":""QID41""}","{""ImportId"":""QID40""}","{""ImportId"":""QID39""}","{""ImportId"":""QID38""}","{""ImportId"":""QID37""}","{""ImportId"":""QID56""}","{""ImportId"":""QID57""}","{""ImportId"":""QID43""}","{""ImportId"":""QID45""}","{""ImportId"":""QID44""}","{""ImportId"":""QID49""}","{""ImportId"":""QID50""}","{""ImportId"":""QID51""}","{""ImportId"":""QID52""}","{""ImportId"":""QID53""}","{""ImportId"":""QID54""}","{""ImportId"":""QID16_TEXT""}","{""ImportId"":""QID17""}","{""ImportId"":""QID29""}","{""ImportId"":""QID31""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID47""}","{""ImportId"":""SC_aXCqY12SVtVIJp4""}","{""ImportId"":""group""}"
+2026-03-20 21:37:26,2026-03-20 21:48:35,0,100,669,1,2026-03-20 21:48:36,R_2gthZfEET2AuQVR,anonymous,EN-GB,1,5,5,2,5,3,5,3,5,2,3,,,,,,,,2,1,3,,1,7,5,7,4,6,6,3,22,1,186,2,5,1,73,treatment
+2026-03-20 22:11:03,2026-03-20 22:32:31,0,100,1287,1,2026-03-20 22:32:31,R_8fiCTOfYT5LaaGY,anonymous,EN-GB,1,3,1,6,5,7,7,7,5,6,2,2,3,5,6,2,7,4,,,,,,,,,,,,,20,1,186,2,5,1,77,control
+2026-03-21 01:21:22,2026-03-21 01:25:54,0,100,271,1,2026-03-21 01:25:54,R_82mOlfDYwjv4ooZ,anonymous,EN-GB,1,2,1,6,7,7,7,6,5,3,2,,,,,,,,1,1,3,3,,5,2,6,1,7,4,4,21,1,186,4,2,1,76,treatment
+2026-03-21 18:16:35,2026-03-21 18:25:48,0,100,553,1,2026-03-21 18:25:49,R_8KDwhszro74aUK7,anonymous,EN-GB,1,6,5,6,2,6,1,6,2,5,5,2,3,6,7,6,4,4,,,,,,,,,,,,,21,2,186,2,5,1,76,control
+2026-03-21 19:22:30,2026-03-21 19:36:22,0,100,832,1,2026-03-21 19:36:23,R_8ZfNw75IQ6fxjxv,anonymous,EN-GB,1,7,1,6,1,6,1,6,3,5,2,,,,,,,,2,1,3,,2,5,3,6,3,7,7,2,20,2,186,4,4,2,74,treatment
+2026-03-21 21:10:47,2026-03-21 21:16:51,0,100,363,1,2026-03-21 21:16:51,R_2O272x97VXbSIDf,anonymous,EN-GB,1,2,5,6,6,5,3,5,5,4,2,,,,,,,,1,1,3,3,,4,6,5,2,6,6,3,21,4,186,2,5,2,174,treatment
+2026-03-22 08:42:24,2026-03-22 08:48:14,0,100,349,1,2026-03-22 08:48:14,R_2Imw4xQGDxnNWJY,anonymous,EN-GB,1,3,5,6,2,6,6,3,1,6,4,,,,,,,,2,1,3,,4,5,6,7,4,7,7,4,19,2,186,4,3,1,84,treatment
+2026-03-22 16:09:37,2026-03-22 16:12:43,0,100,186,1,2026-03-22 16:12:44,R_2suKiWyPf8rCvhn,anonymous,EN-GB,1,6,5,7,5,5,1,6,1,3,1,2,3,6,7,4,6,6,,,,,,,,,,,,,20,1,186,4,5,1,75,control
+2026-03-23 00:46:22,2026-03-23 00:50:18,0,100,235,1,2026-03-23 00:50:19,R_2QlSJtj5y9Yk3A8,anonymous,EN-GB,1,1,5,5,7,7,7,5,6,2,3,2,3,1,4,1,7,7,,,,,,,,,,,,,22,1,35,4,4,1,74,control
+2026-03-23 00:46:17,2026-03-23 00:51:06,0,100,288,1,2026-03-23 00:51:06,R_23jbTyiDo5hAgDx,anonymous,EN-GB,1,6,4,6,3,7,2,7,2,5,5,,,,,,,,1,1,3,1,,7,5,7,4,7,7,3,23,1,79,4,5,2,87,treatment
+2026-03-23 00:46:45,2026-03-23 00:52:35,0,100,349,1,2026-03-23 00:52:36,R_2cvn3Ep5a0H8CeB,anonymous,EN-GB,1,2,3,2,4,5,6,6,4,5,5,,,,,,,,1,1,3,1,,4,5,7,5,7,7,3,23,1,79,4,4,1,82,treatment
+2026-03-23 00:50:21,2026-03-23 00:53:03,0,100,161,1,2026-03-23 00:53:03,R_2AHCX6eeaq9GOJP,anonymous,EN-GB,1,5,3,5,6,3,5,6,2,3,4,2,3,5,6,5,5,7,,,,,,,,,,,,,22,2,146,4,4,1,77,control
+2026-03-23 00:49:19,2026-03-23 00:53:22,0,100,243,1,2026-03-23 00:53:23,R_2CBEx20o2tt9GXf,anonymous,EN-GB,1,3,5,6,4,5,6,5,7,5,3,2,3,1,5,1,6,6,,,,,,,,,,,,,23,1,146,4,3,1,74,control
+2026-03-23 00:50:42,2026-03-23 00:54:37,0,100,235,1,2026-03-23 00:54:38,R_8TNww3Ut039uUwy,anonymous,EN-GB,1,6,5,5,4,6,4,6,5,4,3,,,,,,,,2,1,3,,2,5,5,6,5,7,6,5,27,1,186,4,3,1,88,treatment
+2026-03-23 00:48:21,2026-03-23 00:55:30,0,100,428,1,2026-03-23 00:55:30,R_22u8UBoJAkiJiaT,anonymous,EN-GB,1,4,5,1,7,7,5,7,6,7,1,,,,,,,,1,1,3,4,,5,1,4,1,5,7,2,24,1,64,4,3,2,77,treatment
+2026-03-23 00:50:52,2026-03-23 00:55:43,0,100,291,1,2026-03-23 00:55:44,R_2FFmKRC4jFQ222Z,anonymous,EN-GB,1,5,5,7,6,7,6,6,5,3,2,,,,,,,,1,1,3,3,,5,3,4,2,6,7,5,22,2,64,4,4,1,86,treatment
+2026-03-23 00:57:48,2026-03-23 01:03:46,0,100,358,1,2026-03-23 01:03:47,R_8S4aPP1fccaeBs5,anonymous,EN-GB,1,6,6,6,5,7,3,7,2,5,2,,,,,,,,2,1,3,,2,6,2,6,2,4,7,4,22,1,88,4,2,1,80,treatment
+2026-03-23 01:00:01,2026-03-23 01:05:14,0,100,312,1,2026-03-23 01:05:14,R_2WwmGERfClV0kTh,anonymous,EN-GB,1,3,5,3,5,5,5,4,6,4,5,2,3,3,7,3,6,6,,,,,,,,,,,,,23,1,88,4,3,1,76,control
+2026-03-23 01:06:11,2026-03-23 01:10:09,0,100,238,1,2026-03-23 01:10:10,R_2CElYG4C03mwwVz,anonymous,EN-GB,1,1,2,5,2,5,7,7,2,6,1,,,,,,,,1,1,3,2,,6,6,6,2,7,4,2,25,1,52,4,3,2,72,treatment
+2026-03-23 01:36:40,2026-03-23 01:40:44,0,100,244,1,2026-03-23 01:40:45,R_2K0znns9oXtVxyC,anonymous,EN-GB,1,3,6,5,5,4,5,4,2,2,3,2,3,2,2,2,6,7,,,,,,,,,,,,,21,2,86,2,2,2,64,control
+2026-03-23 01:34:37,2026-03-23 01:43:23,0,100,525,1,2026-03-23 01:43:23,R_8pbSfXZq4NMvwLH,anonymous,EN-GB,1,6,2,6,6,6,7,7,6,5,1,,,,,,,,2,1,3,,2,7,7,6,6,6,7,5,21,2,186,4,5,1,96,treatment
+2026-03-23 01:43:39,2026-03-23 01:48:17,0,100,278,1,2026-03-23 01:48:18,R_2poexGSLtdGJiZH,anonymous,EN-GB,1,6,7,3,1,6,3,5,6,3,1,,,,,,,,2,1,3,,3,7,7,7,5,7,7,1,23,1,52,5,7,1,82,treatment
+2026-03-23 01:56:53,2026-03-23 02:05:30,0,100,517,1,2026-03-23 02:05:31,R_2oZ9mpGXflWMO1U,anonymous,EN-GB,1,2,5,5,2,7,5,6,5,2,2,,,,,,,,1,1,3,1,,4,4,6,4,6,6,4,20,2,27,2,3,2,77,treatment
+2026-03-23 01:56:34,2026-03-23 02:06:04,0,100,570,1,2026-03-23 02:06:05,R_2t5nYEzUPlHmBiM,anonymous,EN-GB,1,6,5,6,4,7,2,6,3,5,1,2,3,3,6,1,5,6,,,,,,,,,,,,,21,2,177,2,2,1,71,control
+2026-03-23 02:07:17,2026-03-23 02:15:16,0,100,479,1,2026-03-23 02:15:17,R_2aIXSIRj20cquFj,anonymous,EN-GB,1,7,5,7,7,7,2,6,5,3,6,,,,,,,,2,1,3,,2,6,6,6,3,5,7,2,21,2,64,5,3,1,92,treatment
+2026-03-23 02:10:44,2026-03-23 02:18:14,0,100,450,1,2026-03-23 02:18:14,R_5UftyzYRf9Gf0uM,anonymous,EN-GB,1,6,2,7,6,7,5,2,1,7,2,2,3,4,7,4,6,4,,,,,,,,,,,,,21,2,64,2,3,2,76,control
+2026-03-23 02:43:52,2026-03-23 02:46:16,0,100,144,1,2026-03-23 02:46:17,R_2QZySJMXHy6x54J,anonymous,EN-GB,1,5,4,6,5,5,4,4,3,4,5,,,,,,,,1,1,3,2,,4,6,6,5,7,6,4,20,1,183,2,3,1,83,treatment
+2026-03-23 03:06:35,2026-03-23 03:13:54,0,100,438,1,2026-03-23 03:13:54,R_4lv3dVoxlq4tT7H,anonymous,EN-GB,1,6,7,7,5,6,3,6,2,5,4,2,3,3,5,1,5,7,,,,,,,,,,,,,23,2,68,4,3,1,79,control
+2026-03-23 04:05:20,2026-03-23 04:11:09,0,100,348,1,2026-03-23 04:11:10,R_2snqzmplsTEz94Z,anonymous,EN-GB,1,6,7,5,3,3,2,5,3,3,2,,,,,,,,1,1,3,2,,4,1,2,1,5,1,1,21,1,146,4,2,1,56,treatment
+2026-03-23 04:03:58,2026-03-23 04:15:37,0,100,698,1,2026-03-23 04:15:37,R_8oEYLLk4gVxWYoC,anonymous,EN-GB,1,5,3,5,6,5,5,6,2,5,6,,,,,,,,1,1,3,4,,5,3,7,3,7,7,5,21,2,186,4,4,1,87,treatment
+2026-03-23 06:05:35,2026-03-23 06:09:30,0,100,234,1,2026-03-23 06:09:31,R_2r7yTHljSc2fPqF,anonymous,EN-GB,1,2,5,6,2,7,7,5,2,7,1,2,3,6,7,6,7,6,,,,,,,,,,,,,25,1,52,5,3,1,83,control
+2026-03-23 07:17:02,2026-03-23 07:21:18,0,100,255,1,2026-03-23 07:21:18,R_2jTjnpKru8PgXhH,anonymous,EN-GB,1,6,5,5,7,6,4,7,3,2,3,,,,,,,,1,1,3,1,,6,4,6,3,7,6,2,23,1,52,5,3,2,84,treatment
+2026-03-23 07:16:35,2026-03-23 07:21:34,0,100,298,1,2026-03-23 07:21:34,R_2wFV637HP4Nmytm,anonymous,EN-GB,1,4,6,6,2,6,5,5,3,6,2,2,3,4,6,4,5,5,,,,,,,,,,,,,23,1,52,4,3,2,76,control
+2026-03-23 07:16:36,2026-03-23 07:22:06,0,100,329,1,2026-03-23 07:22:06,R_287QgSq0mcSpLOx,anonymous,EN-GB,1,5,6,5,3,5,3,3,5,3,1,2,3,4,5,2,5,6,,,,,,,,,,,,,24,2,52,4,2,1,68,control
+2026-03-23 07:23:58,2026-03-23 07:28:20,0,100,261,1,2026-03-23 07:28:20,R_8L7q3it8E09BJKW,anonymous,EN-GB,1,5,2,7,3,6,5,6,1,6,2,,,,,,,,1,1,3,1,,5,6,7,5,7,7,5,25,2,64,4,4,1,87,treatment
+2026-03-23 07:35:07,2026-03-23 07:39:53,0,100,286,1,2026-03-23 07:39:54,R_8YVMIR7xf60S2xf,anonymous,EN-GB,1,2,7,6,7,4,5,4,3,2,4,,,,,,,,1,1,3,2,,4,3,5,1,5,4,4,21,2,52,2,2,1,71,treatment
+2026-03-23 07:51:14,2026-03-23 07:54:35,0,100,201,1,2026-03-23 07:54:36,R_8aeqkBAcozgY3MB,anonymous,EN-GB,1,6,7,6,4,7,5,5,4,5,3,2,3,2,6,2,4,7,,,,,,,,,,,,,22,2,47,4,3,2,81,control
+2026-03-23 08:08:41,2026-03-23 08:14:41,0,100,360,1,2026-03-23 08:14:42,R_2CLTX0AaxhpVqtX,anonymous,EN-GB,1,4,1,7,2,6,5,5,1,7,7,,,,,,,,2,1,3,,1,5,5,7,1,7,7,5,30,2,11,4,2,2,85,treatment
+2026-03-23 08:09:08,2026-03-23 08:15:10,0,100,362,1,2026-03-23 08:15:11,R_873mmNcfcsC6VuV,anonymous,EN-GB,1,7,4,5,3,6,2,7,3,6,2,,,,,,,,1,1,3,3,,5,4,4,4,5,4,3,22,1,88,4,3,1,75,treatment
+2026-03-23 08:14:22,2026-03-23 08:22:37,0,100,495,1,2026-03-23 08:22:38,R_878PLoF6VyojZBY,anonymous,EN-GB,1,5,1,7,5,5,5,5,2,6,2,,,,,,,,1,1,3,2,,4,5,3,6,6,7,4,20,2,64,4,3,1,81,treatment
+2026-03-23 08:15:39,2026-03-23 08:23:19,0,100,460,1,2026-03-23 08:23:20,R_8o6Vkck0d98cUqB,anonymous,EN-GB,1,2,5,5,3,7,5,2,5,7,2,2,3,4,4,1,5,3,,,,,,,,,,,,,21,2,49,2,6,1,65,control
+2026-03-23 08:17:59,2026-03-23 08:24:28,0,100,388,1,2026-03-23 08:24:28,R_2Ekpmno8lXNgQq5,anonymous,EN-GB,1,2,4,3,6,6,6,6,6,3,2,,,,,,,,1,1,3,1,,6,2,6,1,7,6,4,23,1,64,5,2,2,78,treatment
+2026-03-23 08:17:25,2026-03-23 08:24:40,0,100,434,1,2026-03-23 08:24:40,R_2fDmHlxhXYnSrpR,anonymous,EN-GB,1,5,5,7,5,7,3,5,1,5,2,,,,,,,,1,1,3,2,,5,3,5,2,6,7,1,22,2,63,4,2,1,76,treatment
+2026-03-23 08:19:48,2026-03-23 08:32:08,0,100,740,1,2026-03-23 08:32:09,R_2IgT9k9m4kQn9Ux,anonymous,EN-GB,1,2,7,5,6,7,7,7,6,6,5,,,,,,,,1,1,3,2,,5,1,5,4,7,7,2,49,2,183,4,4,2,92,treatment
+2026-03-23 08:30:43,2026-03-23 08:34:45,0,100,241,1,2026-03-23 08:34:46,R_8f7qKb4Iu3nTypJ,anonymous,EN-GB,1,5,2,7,1,5,2,5,1,7,6,,,,,,,,1,1,3,1,,5,5,7,5,7,7,4,24,1,52,4,3,1,82,treatment
+2026-03-23 08:29:10,2026-03-23 08:34:49,0,100,339,1,2026-03-23 08:34:50,R_8UeNNlZRRmj9f5T,anonymous,EN-GB,1,6,5,5,4,6,3,5,5,4,3,2,3,3,6,5,4,5,,,,,,,,,,,,,22,2,146,4,2,1,76,control
+2026-03-23 08:32:00,2026-03-23 08:35:10,0,100,190,1,2026-03-23 08:35:11,R_2TZZglIJMpVqikp,anonymous,EN-GB,1,6,1,7,2,6,5,7,2,7,2,2,3,3,5,5,7,6,,,,,,,,,,,,,22,2,4,5,2,2,80,control
+2026-03-23 08:32:47,2026-03-23 08:45:33,0,100,766,1,2026-03-23 08:45:34,R_22ExjaqdH9WDEmL,anonymous,EN-GB,1,6,7,5,3,5,2,5,6,3,3,,,,,,,,1,1,3,2,,4,3,6,1,6,5,5,23,2,52,5,2,1,79,treatment
+2026-03-23 08:52:47,2026-03-23 08:57:11,0,100,263,1,2026-03-23 08:57:11,R_2HeKj5gFL8A4xqF,anonymous,EN-GB,1,6,4,3,2,6,1,7,5,5,4,,,,,,,,2,1,3,,3,4,5,5,3,7,6,2,23,2,139,4,4,1,78,treatment
+2026-03-23 08:52:34,2026-03-23 08:58:09,0,100,334,1,2026-03-23 08:58:09,R_8rHgN0auhrgYRKL,anonymous,EN-GB,1,6,5,3,2,5,4,6,6,6,6,,,,,,,,1,1,3,3,,5,4,6,3,6,6,5,23,1,52,4,5,2,86,treatment
+2026-03-23 08:58:49,2026-03-23 09:03:50,0,100,300,1,2026-03-23 09:03:51,R_8TLcvsYgjczP7Db,anonymous,EN-GB,1,4,5,4,5,5,5,5,2,3,2,,,,,,,,1,1,3,2,,4,2,4,3,4,4,3,20,2,64,4,2,1,67,treatment
+2026-03-23 09:01:57,2026-03-23 09:05:17,0,100,200,1,2026-03-23 09:05:17,R_2q7HjLsCi1iXLZe,anonymous,EN-GB,1,7,6,6,5,7,3,7,4,5,4,2,3,6,6,6,5,7,,,,,,,,,,,,,21,2,52,2,2,1,89,control
+2026-03-23 08:57:00,2026-03-23 09:06:09,0,100,548,1,2026-03-23 09:06:09,R_8D7zel8YFHKW7NR,anonymous,EN-GB,1,6,5,7,1,6,2,6,3,6,4,2,3,4,5,3,5,7,,,,,,,,,,,,,23,2,79,4,3,1,77,control
+2026-03-23 09:03:37,2026-03-23 09:11:50,0,100,493,1,2026-03-23 09:11:51,R_26dhBAVpSrzf3d7,anonymous,EN-GB,1,7,6,6,4,6,2,6,2,6,2,,,,,,,,1,1,3,2,,4,3,5,3,6,4,3,21,2,52,4,3,1,78,treatment
+2026-03-23 09:09:17,2026-03-23 09:15:27,0,100,369,1,2026-03-23 09:15:27,R_8pXcJouVwDEPsGZ,anonymous,EN-GB,1,6,4,6,5,7,4,5,2,5,5,2,3,1,7,1,2,5,,,,,,,,,,,,,21,2,64,4,2,1,72,control
+2026-03-23 09:10:49,2026-03-23 09:16:51,0,100,361,1,2026-03-23 09:16:51,R_2ap5z0SOI4BilsR,anonymous,EN-GB,1,6,3,2,4,7,5,7,6,5,2,,,,,,,,2,1,3,,1,6,2,5,2,5,4,1,21,1,64,4,3,1,72,treatment
+2026-03-23 09:11:43,2026-03-23 09:19:02,0,100,438,1,2026-03-23 09:19:02,R_2jWcsgrgZoWDCmn,anonymous,EN-GB,1,6,2,6,5,5,3,6,1,5,3,,,,,,,,2,1,3,,1,5,3,3,3,5,6,4,20,1,27,2,2,1,70,treatment
+2026-03-23 09:13:49,2026-03-23 09:19:10,0,100,321,1,2026-03-23 09:19:11,R_8mnqUp7qVngZTY9,anonymous,EN-GB,1,5,6,7,5,5,3,6,1,4,1,,,,,,,,1,1,3,1,,6,2,6,1,6,7,3,23,4,63,4,2,1,172,treatment
+2026-03-23 09:11:51,2026-03-23 09:19:49,0,100,478,1,2026-03-23 09:19:50,R_2Gvz0N0vzi0bexn,anonymous,EN-GB,1,3,3,5,3,5,5,5,2,6,3,,,,,,,,1,1,3,3,,4,5,7,3,6,6,4,22,2,63,4,3,2,79,treatment
+2026-03-23 09:13:59,2026-03-23 09:20:56,0,100,417,1,2026-03-23 09:20:56,R_8bVHF8qmqemxwDl,anonymous,EN-GB,1,6,1,5,6,7,6,7,6,6,4,2,3,4,5,3,5,7,,,,,,,,,,,,,22,3,29,4,2,1,86,control
+2026-03-23 09:21:14,2026-03-23 09:26:38,0,100,324,1,2026-03-23 09:26:39,R_2d215G9lncqCkgN,anonymous,EN-GB,1,7,6,7,2,7,1,7,1,5,1,,,,,,,,1,1,3,3,,4,1,1,1,7,7,5,21,2,64,4,2,1,73,treatment
+2026-03-23 09:30:40,2026-03-23 09:36:11,0,100,331,1,2026-03-23 09:36:12,R_2MxCL2Wr0fKLntD,anonymous,EN-GB,1,6,6,5,6,3,5,6,3,5,6,,,,,,,,1,1,3,2,,6,5,7,5,7,7,3,22,2,52,4,3,2,93,treatment
+2026-03-23 09:37:03,2026-03-23 09:39:39,0,100,156,1,2026-03-23 09:39:39,R_8pNQpU5138P8mxb,anonymous,EN-GB,1,5,5,5,1,5,6,5,6,7,2,2,3,4,6,1,7,5,,,,,,,,,,,,,24,1,52,4,2,1,76,control
+2026-03-23 09:34:22,2026-03-23 09:46:41,0,100,739,1,2026-03-23 09:46:41,R_2KdLCVjZKF4h9eE,anonymous,EN-GB,1,7,6,4,6,7,1,7,5,4,1,,,,,,,,2,1,3,,1,5,5,7,4,5,7,3,21,2,186,4,3,2,87,treatment
+2026-03-23 09:44:15,2026-03-23 09:50:55,0,100,399,1,2026-03-23 09:50:55,R_21z5pmp4im0G2QE,anonymous,EN-GB,1,6,6,3,2,7,1,5,5,3,1,,,,,,,,1,1,3,4,,5,5,7,2,7,7,4,21,1,88,4,4,1,77,treatment
+2026-03-23 09:51:29,2026-03-23 09:57:51,0,100,382,1,2026-03-23 09:57:51,R_2ZKvnzYSrrHdxXr,anonymous,EN-GB,1,5,2,6,5,7,5,6,5,4,2,,,,,,,,2,1,3,,2,4,4,4,2,5,4,4,23,2,4,4,2,1,77,treatment
+2026-03-23 09:53:24,2026-03-23 10:00:13,0,100,408,1,2026-03-23 10:00:14,R_8v2LquBSNkcwriW,anonymous,EN-GB,1,6,5,4,5,5,5,6,7,3,3,,,,,,,,2,1,3,,3,7,6,5,6,7,3,5,24,1,116,4,5,1,87,treatment
+2026-03-23 09:47:16,2026-03-23 10:04:35,0,100,1039,1,2026-03-23 10:04:36,R_81sBXD24Wjhm9By,anonymous,EN-GB,1,6,6,6,6,6,5,6,3,3,5,2,3,3,5,1,6,6,,,,,,,,,,,,,22,2,52,5,2,1,81,control
+2026-03-23 09:59:24,2026-03-23 10:06:18,0,100,413,1,2026-03-23 10:06:19,R_8loeR3UB4GIQCpp,anonymous,EN-GB,1,3,1,5,6,5,3,5,5,4,3,,,,,,,,2,1,3,,2,4,5,7,3,6,6,5,24,2,26,5,2,1,80,treatment
+2026-03-23 10:02:30,2026-03-23 10:07:09,0,100,278,1,2026-03-23 10:07:09,R_2j2r8WfYGmt10gX,anonymous,EN-GB,1,2,5,6,5,6,6,4,2,4,1,,,,,,,,1,1,3,3,,6,5,5,7,4,6,2,20,2,52,2,3,1,75,treatment
+2026-03-23 10:14:36,2026-03-23 10:19:20,0,100,284,1,2026-03-23 10:19:20,R_2phc0m50tC2yyNo,anonymous,EN-GB,1,7,5,5,2,7,1,6,2,4,5,2,3,3,5,4,7,5,,,,,,,,,,,,,22,2,4,4,3,1,75,control
+2026-03-23 09:54:57,2026-03-23 10:24:52,0,100,1794,1,2026-03-23 10:24:52,R_837IFtomUEflLz4,anonymous,EN-GB,1,3,5,6,6,5,5,7,2,3,3,,,,,,,,2,1,3,,1,7,4,6,5,6,6,2,27,2,186,5,5,1,82,treatment
+2026-03-23 10:16:36,2026-03-23 10:25:47,0,100,550,1,2026-03-23 10:25:48,R_8hF47OQMDYxxy78,anonymous,EN-GB,1,7,4,5,3,6,2,6,2,5,3,,,,,,,,1,1,3,2,,5,5,6,4,7,7,3,22,2,144,4,4,1,82,treatment
+2026-03-23 10:25:31,2026-03-23 10:32:49,0,100,438,1,2026-03-23 10:32:50,R_2QlxqkZThu2ruxv,anonymous,EN-GB,1,6,7,7,7,7,7,7,2,6,4,,,,,,,,2,1,3,,1,4,3,6,1,6,5,3,21,2,116,4,4,1,91,treatment

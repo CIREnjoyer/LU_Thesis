@@ -8,6 +8,7 @@ library(dplyr)
 library(httr)
 library(performance)
 library(psych)
+library(correlation)
 
 dta0 <- read.csv("https://raw.githubusercontent.com/CIREnjoyer/LU_Thesis/refs/heads/main/Pilot/Pilot.csv")
 
@@ -45,6 +46,11 @@ dta <- dta |>
 datasummary_skim(dta, type = "numeric",
                  fun_numeric = list(Min = min, Mean = mean, SD = sd, Max = max, "Total N" = length))
 
+x <- correlation(dta[, 14:23],
+                 ci = 0.95)
+
+datasummary_correlation(x,
+                        stars = T)
 
 
 model1 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta, group == "treatment" & check <= 2))
@@ -87,7 +93,6 @@ pwrss.f.reg(r2 = 0.3,
             k = 17,
             power = 0.8,
             alpha = 0.05)
-
 
 
 alpha(dta[, c("q11","q13")])
