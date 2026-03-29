@@ -10,6 +10,7 @@ library(performance)
 library(psych)
 library(correlation)
 library(marginaleffects)
+library(lme4)
 
 dta0 <- read.csv("https://raw.githubusercontent.com/CIREnjoyer/LU_Thesis/refs/heads/main/Pilot/Pilot1.csv")
 nats <- read.csv("https://gist.githubusercontent.com/marijn/274449/raw/0045fb5f54f9ad357e301cf30e23d9834058618a/nationalities.csv")
@@ -31,6 +32,11 @@ dta <- dta |>
          extr = ((q1 + (7 - q6_orig))/2),
          agr = (((7 - q2_orig) + q7)/2),
          neur = ((q4 + (7 - q9_orig))/2),
+         open = (open - 1) / (7 - 1),
+         cons = (cons - 1) / (7 - 1),
+         extr = (extr - 1) / (7 - 1),
+         agr = (agr - 1) / (7 - 1),
+         neur = (neur - 1) / (7 - 1),
          q11 = coalesce(c11, t11),
          q12 = coalesce(c12, t12),
          q13 = coalesce(c13, t13),
@@ -73,13 +79,13 @@ datasummary_correlation(x,
                         stars = T)
 
 
-model1 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta1, group == "treatment" & check <= 3))
+model1 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta1, grp == "treatment" & check <= 3))
 
-model2 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta1, group == "control"))
+model2 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta1, grp == "control"))
 
-model3 <- lm(civ ~ open + cons + extr + agr + neur, data = subset(dta1, group == "treatment" & check <= 3))
+model3 <- lm(civ ~ open + cons + extr + agr + neur, data = subset(dta1, grp == "treatment" & check <= 3))
 
-model4 <- lm(civ ~ open + cons + extr + agr + neur , data = subset(dta1, group == "control"))
+model4 <- lm(civ ~ open + cons + extr + agr + neur , data = subset(dta1, grp == "control"))
 
 modelsummary(list(model1, model2, model3, model4),
              stars = T)
@@ -156,9 +162,16 @@ plot_predictions(model8,
                  conf_level = 0.95)
 
 plot_predictions(model13,
-                 condition = list("extr" = 1:7,
+                 condition = list("agr" = 1:7,
                                   "grp" = c("control", "treatment")),
-                 newdata = datagrid(extr = 1:7,
+                 newdata = datagrid(agr = 1:7,
+                                    grp = c("control", "treatment")),
+                 conf_level = 0.95)
+
+plot_predictions(model7,
+                 condition = list("agr" = 0:1,
+                                  "grp" = c("control", "treatment")),
+                 newdata = datagrid(agr = 0:1,
                                     grp = c("control", "treatment")),
                  conf_level = 0.9)
 
@@ -167,7 +180,9 @@ emmeans(model8, ~cons * grp, at = list(cons = c(1:7)),
         level = 0.9)
 
 
-
+model21 <- lmer(civ ~ 1 + (1 | region), data = dta1)
+summary(model21)
+icc(model21)
 
 
 
