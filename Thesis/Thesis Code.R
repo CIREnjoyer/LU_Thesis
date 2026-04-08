@@ -1,8 +1,6 @@
 library(ggplot2)
-library(readxl)
 library(ggResidpanel)
 library(broom)
-library(pwrss)
 library(modelsummary)
 library(dplyr)
 library(httr)
@@ -125,7 +123,7 @@ summary(lm(civ ~ grp + cons, data = dta1))
 summary(lm(ethn ~ grp, data = dta1))
 summary(lm(ethn ~ grp + cons, data = dta1))
 
-#check for dependencies in the treatment effectivenss
+#check for dependencies in the treatment effectiveness
 summary(lm(check ~ open + cons + extr + agr + neur + psychback + lrscale_1 + age + gndr + educ + region, data = dta1))
 
 #clean models with interactions
