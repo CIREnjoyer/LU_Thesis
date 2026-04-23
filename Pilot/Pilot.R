@@ -12,7 +12,7 @@ library(correlation)
 library(marginaleffects)
 library(lme4)
 
-dta0 <- read.csv("https://raw.githubusercontent.com/CIREnjoyer/LU_Thesis/refs/heads/main/Pilot/Pilot1.csv")
+dta0 <- read.csv("https://raw.githubusercontent.com/CIREnjoyer/LU_Thesis/refs/heads/main/Pilot/Pilot.csv")
 nats <- read.csv("https://gist.githubusercontent.com/marijn/274449/raw/0045fb5f54f9ad357e301cf30e23d9834058618a/nationalities.csv")
 
 dta <- dta0[-c(1:2),]
@@ -27,16 +27,11 @@ for (i in names) {
 }
 
 dta <- dta |>
-  mutate(open = ((q5 + (7 - q10_orig))/2),
-         cons = ((q3 + (7 - q8_orig))/2),
-         extr = ((q1 + (7 - q6_orig))/2),
-         agr = (((7 - q2_orig) + q7)/2),
-         neur = ((q4 + (7 - q9_orig))/2),
-         open = (open - 1) / (7 - 1),
-         cons = (cons - 1) / (7 - 1),
-         extr = (extr - 1) / (7 - 1),
-         agr = (agr - 1) / (7 - 1),
-         neur = (neur - 1) / (7 - 1),
+  mutate(open = ((q5 + (8 - q10_orig))/2),
+         cons = ((q3 + (8 - q8_orig))/2),
+         extr = ((q1 + (8 - q6_orig))/2),
+         agr = (((8 - q2_orig) + q7)/2),
+         neur = ((q4 + (8 - q9_orig))/2),
          q11 = coalesce(c11, t11),
          q12 = coalesce(c12, t12),
          q13 = coalesce(c13, t13),
@@ -94,9 +89,9 @@ model5 <- lm(civ ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp, data = d
 
 model6 <- lm(ethn ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp, data = dta1)
 
-model7 <- lm(civ ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp + age + region + educ + gndr + lrscale_1 + psychback, data = dta1)
+model7 <- lm(civ ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp + age + educ + gndr + lrscale_1 + psychback, data = dta1)
 
-model8 <- lm(ethn ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp + age + region + educ + gndr + lrscale_1 + psychback, data = dta1)
+model8 <- lm(ethn ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp + age + educ + gndr + lrscale_1 + psychback, data = dta1)
 
 modelsummary(list(model5, model6, model7, model8),
              stars = T)

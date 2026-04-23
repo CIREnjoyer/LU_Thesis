@@ -14,6 +14,7 @@ library(expss)
 library(emmeans)
 library(patchwork)
 library(kableExtra)
+library(pwrss)
 
 setwd("C:/Users/skots/Desktop/Master PoliSci/Master's Thesis/Thesis/latex")
 options("modelsummary_format_numeric_latex" = "plain")
@@ -94,7 +95,7 @@ datasummary_skim(dta1[, c("open", "cons", "extr", "agr", "neur", "age", "lrscale
                  )
 
 #cat predictors
-datasummary_skim(dta1[, c("educ_f", "gndr")],
+datasummary_skim(dta1[, c("educ_f", "gndr", "region", "psychback")],
                  output = "latex"
                  )
 
@@ -215,6 +216,11 @@ summary(lm(ethn ~ grp + cons, data = dta1))
 
 #check for dependencies in the treatment effectiveness
 summary(lm(check ~ open + cons + extr + agr + neur + psychback + lrscale_1 + age + gndr + educ + region, data = dta1))
+
+#ICC checks
+
+icc(lmer(civ ~ 1 + (1 | region), data = dta1))
+icc(lmer(ethn ~ 1 + (1 | region), data = dta1))
 
 #clean models with interactions
 model1 <- lm(civ ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp, data = dta1)
@@ -475,9 +481,17 @@ civ_a <- ggplot(predictions, aes(x = agr, y = emmean, colour = grp)) +
   scale_colour_manual(values = c("darkred", "darkblue")) +
   theme_minimal(20) +
   labs(
-    x = "Agreeableness",
+    x = "Agreeableness (Original Scale)",
     y = "Importance of Civic Boundary",
-    colour = "Group")
+    colour = "Group") +
+  coord_cartesian(ylim = c(1, 7)) +
+  scale_x_continuous(breaks = c(1:7)) + 
+  scale_y_continuous(breaks = c(1:7))
+
+ggsave("civag.pdf",
+       plot = civ_a,
+       width = 12,
+       height = 8)
 
 plot_predictions(model3,
                  condition = list("agr" = 1:7,
@@ -525,7 +539,15 @@ ethn_o <- ggplot(predictions, aes(x = open, y = emmean, colour = grp)) +
   labs(
     x = "Openness to Experience",
     y = "Importance of Ethnic Boundary",
-    colour = "Group")
+    colour = "Group") +
+  coord_cartesian(ylim = c(1, 7)) +
+  scale_x_continuous(breaks = c(1:7)) + 
+  scale_y_continuous(breaks = c(1:7))
+
+ggsave("ethnop.pdf",
+       plot = ethn_o,
+       width = 12,
+       height = 8)
 
 plot_predictions(model4,
                  condition = list("open" = 1:7,
@@ -1193,20 +1215,13 @@ modelsummary(list(model3.1, model3.2), #model by groups
                           "open" = "Openness",
                           "cons" = "Conscientiousness",
                           "extr" = "Extraversion",
-                          "agr" = "Agreeableness",
+                          "log(agr)" = "Agreeableness (log)",
                           "neur" = "Neuroticism",
-                          "age" = "Age",
                           "regionEastern Europe" = "Eastern Europe",
-                          "regionOther" = "Other Region",
-                          "educ" = "Education",
-                          "gndrFemale" = "Gender (Female)",
-                          "gndrNon-binary" = "Gender (Non-binary)",
-                          "gndrPrefer" = "Gender (Prefer Not to Say)",
-                          "lrscale_1" = "Left-Right",
-                          "psychbackYes" = "Psychological Background (Yes)"),
+                          "lrscale_1" = "Left-Right"),
              gof_map = c("nobs", "r.squared", "adj.r.squared"),
-             #output = "latex",
-             notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
+             output = "latex",
+             notes = ("OLS coefficients with standard errors in parentheses"))
 
 #ethn
 modelsummary(model4, #full model
@@ -1264,17 +1279,10 @@ modelsummary(list(model4.1, model4.2), #models by group
                           "agr" = "Agreeableness",
                           "neur" = "Neuroticism",
                           "age" = "Age",
-                          "regionEastern Europe" = "Eastern Europe",
-                          "regionOther" = "Other Region",
-                          "educ" = "Education",
-                          "gndrFemale" = "Gender (Female)",
-                          "gndrNon-binary" = "Gender (Non-binary)",
-                          "gndrPrefer" = "Gender (Prefer Not to Say)",
-                          "lrscale_1" = "Left-Right",
-                          "psychbackYes" = "Psychological Background (Yes)"),
+                          "lrscale_1" = "Left-Right"),
              gof_map = c("nobs", "r.squared", "adj.r.squared"),
-             #output = "latex",
-             notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
+             output = "latex",
+             notes = ("OLS coefficients with standard errors in parentheses"))
 
 
 #Being Born
