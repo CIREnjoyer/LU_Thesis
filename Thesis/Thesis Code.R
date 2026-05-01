@@ -156,6 +156,22 @@ ggplot(dta1, aes(x = agr, y = civ)) +
     y = "Importance of Civic Boundary"
   )
 
+ggplot(dta1, aes(x = q2_orig, y = civ)) +
+  geom_smooth(method = "loess") +
+  theme_minimal(20) +
+  labs(
+    x = "Agreeableness (Conflict-Avoidance)",
+    y = "Importance of Civic Boundary"
+  )
+
+ggplot(dta1, aes(x = q7, y = civ)) +
+  geom_smooth(method = "loess") +
+  theme_minimal(20) +
+  labs(
+    x = "Agreeableness (pro-Sociality)",
+    y = "Importance of Civic Boundary"
+  )
+
 ggplot(dta1, aes(x = neur, y = civ)) +
   geom_smooth(method = "loess") +
   theme_minimal(20) +
@@ -227,7 +243,13 @@ model1 <- lm(civ ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp, data = d
 
 model2 <- lm(ethn ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp, data = dta1)
 
+model2.1 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta1, grp == "control"))
+model2.2 <- lm(ethn ~ open + cons + extr + agr + neur, data = subset(dta1, grp == "treatment"))
+
 modelsummary(list(model1, model2),
+             stars = T)
+
+modelsummary(list(model2.1, model2.2),
              stars = T)
 
 #models to control for non-linearity in civ
@@ -250,6 +272,16 @@ m_l <- lm(civ ~ agr, data = dta1)
 m_q <- lm(civ ~ agr + I(agr^2), data = dta1)
 m_log <- lm(civ ~ log(agr), data = dta1)
 AIC(m_l, m_q, m_log) #log is clearly better for agr
+
+m_l <- lm(civ ~ q2_orig, data = dta1)
+m_q <- lm(civ ~ q2_orig + I(q2_orig^2), data = dta1)
+m_log <- lm(civ ~ log(q2_orig), data = dta1)
+AIC(m_l, m_q, m_log) #no singificant changes
+
+m_l <- lm(civ ~ q7, data = dta1)
+m_q <- lm(civ ~ q7 + I(q7^2), data = dta1)
+m_log <- lm(civ ~ log(q7), data = dta1)
+AIC(m_l, m_q, m_log) #no singificant changes
 
 m_l <- lm(civ ~ neur, data = dta1)
 m_q <- lm(civ ~ neur + I(neur^2), data = dta1)
@@ -346,6 +378,13 @@ model3.1 <- lm(civ ~ open + cons + extr + log(agr) + neur + age + region + educ 
 model3.2 <- lm(civ ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "treatment"))
 
 modelsummary(list(model3.1, model3.2),
+             stars = T)
+
+#robustness check for civ
+model3.3.1 <- lm(civ ~ open*grp + cons*grp + extr*grp + q2_orig*grp + neur*grp + age + region + educ + gndr + lrscale_1 + psychback, data = dta1)
+model3.3.2 <- lm(civ ~ open*grp + cons*grp + extr*grp + q7*grp + neur*grp + age + region + educ + gndr + lrscale_1 + psychback, data = dta1)
+
+modelsummary(list(model3.3.1, model3.3.2),
              stars = T)
 
 #ethn models by group
@@ -850,6 +889,13 @@ ggplot(predictions, aes(x = neur, y = emmean, colour = grp)) +
     y = "Importance of Language",
     colour = "Group")
 
+#Language by group
+model6.1 <- lm(q12 ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "control"))
+model6.2 <- lm(q12 ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "treatment"))
+
+modelsummary(list(model6.1, model6.2),
+             stars = T)
+
 #Ancestry
 model7 <- lm(q13 ~ open*grp + cons*grp + extr*grp + agr*grp + neur*grp + age + region + educ + gndr + lrscale_1 + psychback, data = dta1)
 modelsummary(model7, stars = T)
@@ -1058,6 +1104,13 @@ ggplot(predictions, aes(x = neur, y = emmean, colour = grp)) +
     y = "Importance of Respecting Institutions",
     colour = "Group")
 
+#Institutions by group
+model8.1 <- lm(q14 ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "control"))
+model8.2 <- lm(q14 ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "treatment"))
+
+modelsummary(list(model8.1, model8.2),
+             stars = T)
+
 #Feel
 model9 <- lm(q15 ~ open*grp + cons*grp + extr*grp + log(agr)*grp + neur*grp + age + region + educ + gndr + lrscale_1 + psychback, data = dta1)
 modelsummary(model9, stars = T)
@@ -1158,6 +1211,16 @@ ggplot(predictions, aes(x = neur, y = emmean, colour = grp)) +
     x = "Neuroticism",
     y = "Importance of Feeling",
     colour = "Group")
+
+#Feel by group
+model9.1 <- lm(q15 ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "control"))
+model9.2 <- lm(q15 ~ open + cons + extr + log(agr) + neur + age + region + educ + gndr + lrscale_1 + psychback, data = subset(dta1, grp == "treatment"))
+
+modelsummary(list(model9.1, model9.2))
+
+###### Reliablity checks
+alpha(dta1[, c("q12", "q14", "q15")])
+alpha(dta1[, c("q11", "q13")])
 
 ###### Presentation
 
@@ -1495,7 +1558,29 @@ modelsummary(model9, #only significant
              output = "latex",
              notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
 
+#civ by item
+modelsummary(list(model6.2, model8.2, model9.2),
+             stars = T,
+             coef_map = c("(Intercept)" = "Intercept",
+                          "open" = "Openness",
+                          "cons" = "Conscientiousness",
+                          "extr" = "Extraversion",
+                          "log(agr)" = "Agreeableness (log)",
+                          "neur" = "Neuroticism",
+                          "grptreatment" = "Treatment Group",
+                          "open:grptreatment" = "Openness * Treatment",
+                          "grptreatment:cons" = "Conscientiousness * Treatment",
+                          "grptreatment:extr" = "Extraversion * Treatment",
+                          "grptreatment:log(agr)" = "Agreeableness (log) * Treatment",
+                          "grptreatment:neur" = "Neuroticism * Treatment",
+                          "lrscale_1" = "Left-Right"),
+             gof_map = c("nobs", "r.squared", "adj.r.squared"),
+             output = "latex",
+             notes = ("OLS coefficients with standard errors in parentheses"))
 
 
+#ethn by item
+modelsummary(list(model5, model7),
+             stars = T)
 
 
