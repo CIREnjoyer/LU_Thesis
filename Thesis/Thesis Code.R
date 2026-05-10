@@ -68,7 +68,7 @@ dta <- dta |> #recoding variables
                               "Russian", "Czech", "Croatian", "Bosnian", "Estonian",
                               "Hungarian", "Albanian", "Armenian", "Azerbaijani",
                               "Belarusian", "Georgian", "Herzegovinian") ~ "Eastern Europe",
-         TRUE ~ "Other"),
+         T ~ "Other"),
          region = factor(region, levels = c("Western Europe", 
                                             "Eastern Europe", 
                                             "Other"))
@@ -87,6 +87,19 @@ summary(lm(ethn ~ as.factor(educ), data = dta1))
 summary(lm(ethn ~ educ, data = dta1))
 
 ###### Data Presentation
+
+ggplot(dta1, aes(ethn)) + 
+  geom_histogram(fill = "lightblue",
+                 colour = "black",
+                 binwidth = 0.5) + 
+  scale_x_continuous(breaks = seq(1,7, by = 1)) +
+  labs(x = "Importance of Ethnic Boundary",
+       y = "Count") + 
+  theme_minimal(20)
+
+#ggsave("ethnhist.pdf",
+#       width = 12,
+#       height = 8)
 
 #predictors
 datasummary_skim(dta1[, c("open", "cons", "extr", "agr", "neur", "age", "lrscale_1")], type = "numeric",
