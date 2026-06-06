@@ -531,7 +531,7 @@ civ_a <- ggplot(predictions, aes(x = agr, y = emmean, colour = grp)) +
   geom_line(size = 1) + 
   geom_ribbon(data = predictions, aes(ymin = lower.CL, ymax = upper.CL), alpha = 0.2) + 
   scale_colour_manual(values = c("darkred", "darkblue")) +
-  theme_minimal(20) +
+  theme_minimal(22) +
   labs(
     x = "Agreeableness (Original Scale)",
     y = "Importance of Civic Boundary",
@@ -587,7 +587,7 @@ ethn_o <- ggplot(predictions, aes(x = open, y = emmean, colour = grp)) +
   geom_line(size = 1) + 
   geom_ribbon(data = predictions, aes(ymin = lower.CL, ymax = upper.CL), alpha = 0.2) + 
   scale_colour_manual(values = c("darkred", "darkblue")) +
-  theme_minimal(20) +
+  theme_minimal(22) +
   labs(
     x = "Openness to Experience",
     y = "Importance of Ethnic Boundary",
