@@ -58,7 +58,7 @@ dta <- dta |> #recoding variables
            educ == 1 ~ 2,
            .default = educ
          ),
-         educ_f = factor(educ, levels = c(1:5), labels = c("Less than High School", "High School", "Bachelor's", "Master's", "Doctorate")),
+         educ_f = factor(educ, levels = c(2:5), labels = c("High School", "Bachelor's", "Master's", "Doctorate")),
          region = case_when(
          nationality %in% c("Dutch", "French", "German", "Italian", "Austrian",
                               "Belgian", "Finnish", "Irish", "Portuguese", "Spanish",
@@ -1262,7 +1262,7 @@ modelsummary(model3, #full model
                           "lrscale_1" = "Left-Right",
                           "psychbackYes" = "Psychological Background (Yes)"),
              gof_map = c("nobs", "r.squared", "adj.r.squared"),
-             #output = "latex",
+             output = "latex",
                          notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
 
 modelsummary(model3, #only significant
@@ -1293,11 +1293,24 @@ modelsummary(list(model3.1, model3.2), #model by groups
                           "extr" = "Extraversion",
                           "log(agr)" = "Agreeableness (log)",
                           "neur" = "Neuroticism",
+                          "grptreatment" = "Treatment Group",
+                          "open:grptreatment" = "Openness * Treatment",
+                          "grptreatment:cons" = "Conscientiousness * Treatment",
+                          "grptreatment:extr" = "Extraversion * Treatment",
+                          "grptreatment:log(agr)" = "Agreeableness (log) * Treatment",
+                          "grptreatment:neur" = "Neuroticism * Treatment",
+                          "age" = "Age",
                           "regionEastern Europe" = "Eastern Europe",
-                          "lrscale_1" = "Left-Right"),
+                          "regionOther" = "Other Region",
+                          "educ" = "Education",
+                          "gndrFemale" = "Gender (Female)",
+                          "gndrNon-binary" = "Gender (Non-binary)",
+                          "gndrPrefer" = "Gender (Prefer Not to Say)",
+                          "lrscale_1" = "Left-Right",
+                          "psychbackYes" = "Psychological Background (Yes)"),
              gof_map = c("nobs", "r.squared", "adj.r.squared"),
              output = "latex",
-             notes = ("OLS coefficients with standard errors in parentheses"))
+             notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
 
 #ethn
 modelsummary(model4, #full model
@@ -1324,7 +1337,7 @@ modelsummary(model4, #full model
                           "lrscale_1" = "Left-Right",
                           "psychbackYes" = "Psychological Background (Yes)"),
              gof_map = c("nobs", "r.squared", "adj.r.squared"),
-             #output = "latex",
+             output = "latex",
              notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
 
 modelsummary(model4, #only significant
@@ -1354,8 +1367,21 @@ modelsummary(list(model4.1, model4.2), #models by group
                           "extr" = "Extraversion",
                           "agr" = "Agreeableness",
                           "neur" = "Neuroticism",
+                          "grptreatment" = "Treatment Group",
+                          "open:grptreatment" = "Openness * Treatment",
+                          "grptreatment:cons" = "Conscientiousness * Treatment",
+                          "grptreatment:extr" = "Extraversion * Treatment",
+                          "grptreatment:agr" = "Agreeableness * Treatment",
+                          "grptreatment:neur" = "Neuroticism * Treatment",
                           "age" = "Age",
-                          "lrscale_1" = "Left-Right"),
+                          "regionEastern Europe" = "Eastern Europe",
+                          "regionOther" = "Other Region",
+                          "educ" = "Education",
+                          "gndrFemale" = "Gender (Female)",
+                          "gndrNon-binary" = "Gender (Non-binary)",
+                          "gndrPrefer" = "Gender (Prefer Not to Say)",
+                          "lrscale_1" = "Left-Right",
+                          "psychbackYes" = "Psychological Background (Yes)"),
              gof_map = c("nobs", "r.squared", "adj.r.squared"),
              output = "latex",
              notes = ("OLS coefficients with standard errors in parentheses"))
@@ -1596,4 +1622,34 @@ modelsummary(list(model6.2, model8.2, model9.2),
 modelsummary(list(model5, model7),
              stars = T)
 
+#rob check for civ
+
+modelsummary(list(model3.3.1, model3.3.2),
+             stars = T,
+             coef_map = c("(Intercept)" = "Intercept",
+                          "open" = "Openness",
+                          "cons" = "Conscientiousness",
+                          "extr" = "Extraversion",
+                          "agr" = "Agreeableness",
+                          "q2_orig" = "Conflict-Avoidance (reverse coded)",
+                          "q7" = "Pro-Sociality",
+                          "neur" = "Neuroticism",
+                          "grptreatment" = "Treatment Group",
+                          "open:grptreatment" = "Openness * Treatment",
+                          "grptreatment:cons" = "Conscientiousness * Treatment",
+                          "grptreatment:extr" = "Extraversion * Treatment",
+                          "grptreatment:agr" = "Agreeableness * Treatment",
+                          "grptreatment:neur" = "Neuroticism * Treatment",
+                          "age" = "Age",
+                          "regionEastern Europe" = "Eastern Europe",
+                          "regionOther" = "Other Region",
+                          "educ" = "Education",
+                          "gndrFemale" = "Gender (Female)",
+                          "gndrNon-binary" = "Gender (Non-binary)",
+                          "gndrPrefer" = "Gender (Prefer Not to Say)",
+                          "lrscale_1" = "Left-Right",
+                          "psychbackYes" = "Psychological Background (Yes)"),
+             gof_map = c("nobs", "r.squared", "adj.r.squared"),
+             output = "latex",
+             notes = ("OLS coefficients with standard errors in parentheses. The reference groups are Western Europe for region and Male for gender"))
 
